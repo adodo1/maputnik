@@ -5,6 +5,12 @@ import StringInput from '../inputs/StringInput'
 import AutocompleteInput from '../inputs/AutocompleteInput'
 import SelectInput from '../inputs/SelectInput'
 
+function tryParseInt(v) {
+  if (v === '') return v
+  if (isNaN(v)) return v
+  return parseFloat(v)
+}
+
 class SingleFilterEditor extends React.Component {
   static propTypes = {
     filter: React.PropTypes.array.isRequired,
@@ -17,7 +23,12 @@ class SingleFilterEditor extends React.Component {
   }
 
   onFilterPartChanged(filterOp, propertyName, filterArgs) {
-    const newFilter = [filterOp, propertyName, ...filterArgs]
+    let newFilter = [filterOp, propertyName, ...filterArgs.map(tryParseInt)]
+    if(filterOp === 'has' || filterOp === '!has') {
+      newFilter = [filterOp, propertyName]
+    } else if(filterArgs.length === 0) {
+      newFilter = [filterOp, propertyName, '']
+    }
     this.props.onChange(newFilter)
   }
 
@@ -42,12 +53,14 @@ class SingleFilterEditor extends React.Component {
           options={otherFilterOps}
         />
       </div>
+      {filterArgs.length > 0 &&
       <div className="maputnik-filter-editor-args">
         <StringInput
           value={filterArgs.join(',')}
           onChange={ v=> this.onFilterPartChanged(filterOp, propertyName, v.split(','))}
         />
       </div>
+      }
     </div>
   }
 

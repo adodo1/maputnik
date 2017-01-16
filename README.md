@@ -8,23 +8,16 @@ targeted at developers and map designers.
 - :link: Design your maps online at **http://maputnik.com/editor/** (all in local storage)
 - :link: Use the [Maputnik CLI](https://github.com/maputnik/editor/wiki/Maputnik-CLI) for local style development
 
+Mapbox has built one of the best and most amazing OSS ecosystems. A key component to ensure its longevity and independance is an OSS map designer.
+
 ## Documentation
 
 The documentation can be found in the [Wiki](https://github.com/maputnik/editor/wiki). You are welcome to collaborate!
 
-- :link: Study the [Maputnik Wiki](https://github.com/maputnik/editor/wiki)
+- :link: **Study the [Maputnik Wiki](https://github.com/maputnik/editor/wiki)**
 - :video_camera: Design a map from Scratch https://youtu.be/XoDh0gEnBQo
 
-[![Design Map from Scratch](https://j.gifs.com/k5g8OJ.gif)](https://youtu.be/XoDh0gEnBQo)
-
-## Reasons for building a Map Designer
-
-- Mapbox has built one of the best and most amazing OSS ecosystems. A key component to ensure longevity and independance is an OSS style editor.
-- Maputnik solves the problem for people who are serving their own vector tiles and want to design a map style for these tiles.
-- It allows working with resources in your internal network in sensitive industries.
-- It gives full power to developers familiar with the Mapbox GL style specification thanks to the JSON editing mode.
-- It allows hacking and extending the editor by the community to come up with new ideas for a map designer!
-- It allows plugging in other renderers like Open Layers 3
+[![Design Map from Scratch](https://j.gifs.com/g5XMgl.gif)](https://youtu.be/XoDh0gEnBQo)
 
 ## Develop
 
@@ -53,8 +46,6 @@ npm run build
 Lint the JavaScript code.
 
 ```
-# install lint dependencies
-npm install --save-dev eslint eslint-plugin-react
 # run linter
 npm run lint
 npm run lint-styles
@@ -66,21 +57,36 @@ Thanks to the supporters of the **[Kickstarter campaign](https://www.kickstarter
 
 ### Gold
 
+- [Wemap](https://getwemap.com/)
+- [Orbicon Informatik](https://www.orbiconinformatik.dk/)
+- [Terranodo](http://terranodo.io/)
+
 <a href="https://getwemap.com/">
-  <img width="48%" alt="Wemap" style="display:inline-block" src="media/sponsors/wemap.jpg" />
+  <img width="33%" alt="Wemap" style="display:inline" src="media/sponsors/wemap.jpg" />
+</a>
+<a href="http://terranodo.io/">
+  <img width="33%" alt="Terranodo" style="display:inline" src="media/sponsors/terranodo.png" />
+</a>
+<a href="https://www.orbiconinformatik.dk/">
+  <img width="32%" alt="Terranodo" style="display:inline" src="media/sponsors/orbicon_informatik.png" />
 </a>
 
-<a href="htts://terranodo.io/">
-  <img width="48%" alt="Terranodo" style="display:inline-block" src="media/sponsors/terranodo.png" />
-</a>
+<br/>
 
 ### Silver
 
+- [Klokan Technologies](https://www.klokantech.com/)
+- [Geofabrik](http://www.geofabrik.de/)
+- [Dreipol](https://www.dreipol.ch/)
+
 <a href="https://www.klokantech.com/">
-  <img width="22%" alt="Klokan Technologies" style="display:inline-block" src="media/sponsors/klokantech.png" />
+  <img width="18%" alt="Klokan Technologies" style="display:inline-block" src="media/sponsors/klokantech.png" />
+</a>
+<a href="http://www.geofabrik.de/">
+  <img width="18%" alt="Geofabrik" style="display:inline-block" src="media/sponsors/geofabrik.png" />
 </a>
 <a href="https://www.dreipol.ch/">
-  <img width="22%" alt="Dreipol" style="display:inline-block" src="media/sponsors/dreipol.png" />
+  <img width="18%" alt="Dreipol" style="display:inline-block" src="media/sponsors/dreipol.png" />
 </a>
 
 <br/>
