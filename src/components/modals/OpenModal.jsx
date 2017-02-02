@@ -55,6 +55,7 @@ class OpenModal extends React.Component {
           const mapStyle = style.ensureStyleValidity(JSON.parse(body))
           console.log('Loaded style ', mapStyle.id)
           this.props.onStyleOpen(mapStyle)
+          this.props.onOpenToggle();
         } else {
           console.warn('Could not open the style URL', styleUrl)
         }
